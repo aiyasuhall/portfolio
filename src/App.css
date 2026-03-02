@@ -1,0 +1,221 @@
+:root {
+  --bg-deep: #050B14;
+  --bg-glow: #172554;
+  --text-main: #F8FAFC;
+  --text-sec: #94A3B8;
+  --primary: #3b82f6;
+  --secondary: #8b5cf6;
+  
+  /* glass */
+  --glass-bg: rgba(30, 41, 59, 0.3);
+  --glass-border: rgba(255, 255, 255, 0.08);
+  --glass-blur: blur(12px);
+  --neon-shadow: 0 0 20px rgba(59, 130, 246, 0.4);
+}
+
+/* general */
+#root { width: 100%; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: var(--text-main); background-color: var(--bg-deep);
+  background-image: radial-gradient(circle at 50% -20%, var(--bg-glow), var(--bg-deep) 70%);
+  background-attachment: fixed;
+}
+
+.app-wrapper { padding-top: 60px; }
+
+/* SCROLL ANIMATION */
+.reveal { opacity: 0; transform: translateY(40px); transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1); }
+.reveal.active { opacity: 1; transform: translateY(0); }
+
+/* NAVBAR */
+.navbar {
+  position: fixed; top: 0; width: 100%;
+  background: rgba(5, 11, 20, 0.6); backdrop-filter: var(--glass-blur); -webkit-backdrop-filter: var(--glass-blur);
+  border-bottom: 1px solid var(--glass-border);
+  display: flex; justify-content: center; align-items: center; padding: 15px 0; z-index: 1000;
+}
+.nav-links { display: flex; gap: 55px; } 
+.nav-links a { text-decoration: none; color: var(--text-sec); font-weight: 600; transition: 0.3s; font-size: 15px; text-transform: uppercase; letter-spacing: 1px;}
+.nav-links a:hover { color: var(--primary); text-shadow: 0 0 8px var(--primary); }
+
+/* SECTION */
+.section { min-height: 80vh; padding: 80px 20px; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; }
+.home-section, .about-section, .experience-section, .projects-section, .contact-section { background-color: transparent; }
+
+.section h2 { 
+  font-size: 32px; margin-bottom: 50px; color: var(--text-main); border-bottom: 3px solid transparent; 
+  background: linear-gradient(90deg, var(--primary), var(--secondary)); background-position: bottom; background-size: 100% 3px; background-repeat: no-repeat;
+  display: inline-block; padding-bottom: 10px; 
+}
+
+/* UI HEADER SPLIT */
+.header-split { display: flex; align-items: center; justify-content: space-between; max-width: 1000px; width: 100%; gap: 50px; text-align: left; }
+.header-left { flex: 1.2; }
+.greeting { font-size: 16px; color: var(--primary); font-weight: 700; margin-bottom: 15px; display: block; letter-spacing: 2px; text-transform: uppercase;}
+.name { font-size: 64px; font-weight: 800; color: white; margin: 0 0 10px 0; line-height: 1.1; letter-spacing: 1px;}
+
+.title-gradient {
+  font-size: 36px; font-weight: 700; margin: 0 0 30px 0; color: #A855F7;
+  border-bottom: 4px solid #A855F7; display: inline-block; padding-bottom: 5px;
+  text-shadow: 0 0 20px rgba(168, 85, 247, 0.4);
+}
+
+.bio-split { color: var(--text-sec); font-size: 18px; line-height: 1.7; margin-bottom: 30px; max-width: 500px; }
+.contact-info-split { display: flex; flex-direction: column; gap: 15px; color: var(--text-sec); margin-bottom: 30px; }
+.contact-info-split p { display: flex; align-items: center; gap: 15px; margin: 0; font-weight: 500; font-size: 16px; }
+
+/* CSS CHO ICON SOCIAL Ở HEADER */
+.header-social-links { 
+  display: flex; 
+  gap: 20px; 
+  margin-top: -10px; 
+  margin-bottom: 25px; 
+}
+.header-icon-link {
+  color: var(--text-sec); background: var(--glass-bg); border: 1px solid var(--glass-border);
+  width: 50px; height: 50px; border-radius: 12px; 
+  display: flex; align-items: center; justify-content: center; transition: all 0.3s ease;
+}
+.header-icon-link:hover {
+  color: white; border-color: var(--primary); background: rgba(59, 130, 246, 0.3);
+  transform: translateY(-5px); box-shadow: 0 0 20px rgba(59, 130, 246, 0.5);
+}
+
+/* Ava */
+.header-right { flex: 1; display: flex; justify-content: center; position: relative; }
+.image-wrapper { position: relative; width: 100%; max-width: 350px; }
+.hero-image { 
+  width: 100%; height: auto; border-radius: 30px; object-fit: cover; border: 2px solid var(--glass-border); 
+  box-shadow: 0 0 50px rgba(59, 130, 246, 0.25);
+}
+.floating-icon {
+  position: absolute; font-size: 32px; background: var(--glass-bg); backdrop-filter: var(--glass-blur);
+  padding: 15px; border-radius: 50%; border: 1px solid var(--glass-border);
+  box-shadow: var(--neon-shadow); animation: float 4s ease-in-out infinite; 
+}
+.icon-1 { top: -20px; left: -20px; animation-delay: 0s; }
+.icon-2 { bottom: 30px; right: -20px; animation-delay: 2s; }
+@keyframes float { 0% { transform: translateY(0px); } 50% { transform: translateY(-20px); } 100% { transform: translateY(0px); } }
+
+/* About skills */
+.about-container { display: flex; flex-wrap: wrap; max-width: 1000px; gap: 50px; justify-content: space-between; text-align: left; }
+.about-text { flex: 1; min-width: 300px; color: var(--text-sec); line-height: 1.8; font-size: 17px; }
+.about-text p { margin-bottom: 20px; }
+.about-skills { flex: 1; min-width: 300px; }
+
+/* Caption */
+.about-subtitle { color: white; font-size: 22px; margin-bottom: 25px; font-weight: 700; letter-spacing: 0.5px; }
+
+.skills-grid { display: flex; flex-wrap: wrap; gap: 15px; }
+
+/* Glassmorphism */
+.skill-badge { 
+  background: var(--glass-bg); 
+  backdrop-filter: var(--glass-blur); -webkit-backdrop-filter: var(--glass-blur);
+  color: var(--text-main); 
+  padding: 12px 20px; 
+  border-radius: 12px; 
+  font-weight: 500; 
+  font-size: 15px; 
+  border: 1px solid var(--glass-border); 
+  transition: all 0.3s ease;
+  display: flex; align-items: center; gap: 10px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.skill-icon { color: var(--primary); display: flex; align-items: center; transition: 0.3s;}
+
+/* Hover */
+.skill-badge:hover { 
+  background: rgba(59, 130, 246, 0.15); 
+  border-color: var(--primary); 
+  transform: translateY(-5px); 
+  box-shadow: 0 10px 20px rgba(59, 130, 246, 0.3); 
+  color: #93C5FD;
+}
+.skill-badge:hover .skill-icon { color: #A855F7; }
+
+/* TIMELINE EXPERIENCE */
+.timeline { max-width: 800px; width: 100%; border-left: 2px solid rgba(59, 130, 246, 0.3); padding-left: 30px; text-align: left; margin-left: 15px; }
+.timeline-item { margin-bottom: 40px; position: relative; background: var(--glass-bg); backdrop-filter: var(--glass-blur); padding: 25px; border-radius: 12px; border: 1px solid var(--glass-border); box-shadow: 0 10px 30px rgba(0,0,0,0.2); transition: 0.3s; }
+.timeline-item:hover { border-color: rgba(59, 130, 246, 0.4); transform: translateX(5px); }
+.timeline-item::before { content: ''; position: absolute; left: -39px; top: 25px; width: 14px; height: 14px; background-color: var(--primary); border-radius: 50%; border: 4px solid var(--bg-deep); box-shadow: 0 0 10px var(--primary); }
+.timeline-item h3 { color: var(--text-main); margin: 0 0 8px 0; font-size: 20px;}
+.timeline-item h4 { color: #A855F7; margin: 0 0 15px 0; font-weight: 500; font-size: 15px;}
+.timeline-item p { color: var(--text-sec); margin: 0; line-height: 1.6; }
+
+/* PROJECT CARD */
+.project-grid { display: flex; gap: 30px; flex-wrap: wrap; justify-content: center; max-width: 1000px; }
+.project-card { background: var(--glass-bg); backdrop-filter: var(--glass-blur); padding: 30px; border-radius: 16px; border: 1px solid var(--glass-border); box-shadow: 0 10px 30px rgba(0,0,0,0.2); width: 280px; transition: 0.4s; position: relative; overflow: hidden; }
+.project-card::before { content: ''; position: absolute; top: 0; left: -100%; width: 50%; height: 100%; background: linear-gradient(to right, transparent, rgba(255,255,255,0.05), transparent); transform: skewX(-20deg); transition: 0.5s; }
+.project-card:hover::before { left: 150%; }
+.project-card:hover { transform: translateY(-10px); border-color: rgba(139, 92, 246, 0.4); box-shadow: 0 20px 40px rgba(0,0,0,0.4); }
+.project-card h3 { color: var(--text-main); font-size: 22px; margin-bottom: 15px;}
+.project-card p { color: var(--text-sec); margin-top: 10px; line-height: 1.6; }
+.btn-view { display: inline-block; margin-top: 20px; padding: 10px 20px; background-color: rgba(59, 130, 246, 0.1); color: #93C5FD; border: 1px solid rgba(59, 130, 246, 0.3); text-decoration: none; border-radius: 8px; transition: 0.3s; font-weight: 500;}
+.btn-view:hover { background-color: var(--primary); color: white; box-shadow: 0 0 15px rgba(59, 130, 246, 0.5); border-color: var(--primary);}
+
+/* 1. MÀN HÌNH LAPTOP NHỎ & TABLET (Dưới 1024px) */
+@media (max-width: 1024px) {
+  /* Cho phép Navbar rớt dòng nếu màn hình hẹp */
+  .nav-links { gap: 20px; flex-wrap: wrap; justify-content: center; }
+  
+  /* Thu nhỏ chữ Header lại một chút */
+  .name { font-size: 52px; }
+  .title-gradient { font-size: 30px; }
+  .image-wrapper { max-width: 300px; }
+  
+  /* Phần About chia 2 cột bắt đầu chật, chuyển sang xếp dọc */
+  .about-container { flex-direction: column; text-align: center; gap: 40px; }
+  .skills-grid { justify-content: center; } /* Đưa các nút kỹ năng ra giữa */
+}
+
+/* 2. MÀN HÌNH ĐIỆN THOẠI (Dưới 768px) */
+@media (max-width: 768px) {
+  /* Thanh Menu nhỏ gọn lại */
+  .navbar { padding: 10px 15px; }
+  .nav-links { gap: 15px; }
+  .nav-links a { font-size: 13px; letter-spacing: 0; }
+
+  .app-wrapper { padding-top: 80px; }
+
+  /* Bố cục Header xếp dọc (Chữ trên, Ảnh dưới hoặc ngược lại) */
+  .header-split { flex-direction: column-reverse; text-align: center; gap: 30px; }
+  
+  /* Căn giữa toàn bộ thông tin cá nhân */
+  .header-left { align-items: center; display: flex; flex-direction: column; }
+  .contact-info-split { align-items: center; }
+  .header-social-links { justify-content: center; margin-bottom: 20px; }
+  
+  /* Font chữ cho điện thoại */
+  .name { font-size: 40px; }
+  .title-gradient { font-size: 24px; }
+  .bio-split { font-size: 16px; }
+
+  /* Căn chỉnh ảnh và giấu bớt chi tiết thừa để web chạy nhẹ hơn */
+  .image-wrapper { max-width: 250px; margin: 0 auto; }
+  .floating-icon { display: none; } /* Giấu icon lơ lửng đi cho đỡ rối mắt */
+
+  /* Phần About & Skills */
+  .about-subtitle { font-size: 20px; }
+  .skill-badge { font-size: 14px; padding: 10px 15px; }
+
+  /* Phần Timeline (Kinh nghiệm) */
+  .timeline { border-left: none; padding-left: 0; margin-left: 0; text-align: center; }
+  .timeline-item::before { display: none; } /* Giấu cái dấu chấm tròn bên hông */
+  .timeline-item { padding: 20px; }
+
+  /* Phần Dự án (Projects) */
+  .project-grid { flex-direction: column; align-items: center; gap: 20px; }
+  .project-card { width: 100%; max-width: 350px; } /* Thẻ dự án bung tràn màn hình điện thoại */
+}
+
+/* 3. MÀN HÌNH ĐIỆN THOẠI NHỎ (Dưới 480px - iPhone SE, Galaxy nhỏ) */
+@media (max-width: 480px) {
+  .name { font-size: 32px; }
+  .nav-links { gap: 10px; }
+  .nav-links a { font-size: 12px; }
+}
