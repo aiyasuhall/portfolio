@@ -28,7 +28,7 @@ export default function About({ personalInfo }) {
         {/* Intro */}
         <div className="about-text">
           <h3 className="about-subtitle">Introduction</h3>
-          <p>Hi, my name is Khoi Vi, a 4th-year Computer Science student at Vietnamese-German University and an aspiring Software Developer. I love turning tricky problems into clean, user-friendly code! My skillset blends strict logic from C/C++ and Python with a passion for building beautiful interfaces using React.</p>
+          <p>Hi, my name is Khoi Vi, a 4th-year Computer Science student at Vietnamese-German University and an aspiring Software Developer. I love turning tricky problems into clean, user-friendly code! My background in C/C++, Python, and JavaScript is paired with a love for building modern, beautiful user interfaces with React.</p>
           <p>I always code with the user in mind—ensuring everything works perfectly under the hood while delivering a seamless experience. During a 6-month study program in Bonn, Germany, I gained valuable international exposure that leveled up both my technical expertise and cross-cultural teamwork. Right now, I'm focused on mastering the React & Node.js ecosystem, always eager to build projects that make a real impact.</p>
         </div>
 
@@ -47,7 +47,7 @@ export default function About({ personalInfo }) {
           </div>
 
           {/* Languages */}
-          <h3 className="about-subtitle" style={{ marginTop: '40px' }}>Languages</h3>
+          <h3 className="about-subtitle" style={{ marginTop: '40px' }}>Language</h3>
           <div className="skills-grid">
             {languages.map((lang, index) => (
               <div key={index} className="skill-badge">
