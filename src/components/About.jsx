@@ -28,8 +28,8 @@ export default function About({ personalInfo }) {
         {/* Intro */}
         <div className="about-text">
           <h3 className="about-subtitle">Introduction</h3>
-          <p>Hi, my name is Khoi Vi, a 4th-year Computer Science student at Vietnamese-German University and an aspiring Software Developer. I love turning tricky problems into clean, user-friendly code! My background in C/C++, Python, and JavaScript is paired with a love for building modern, beautiful user interfaces with React.</p>
-          <p>IIII always code with the user in mind—ensuring everything works perfectly under the hood while delivering a seamless experience. During a 6-month study program in Bonn, Germany, I gained valuable international exposure that leveled up both my technical expertise and cross-cultural teamwork. Right now, I'm focused on mastering the React & Node.js ecosystem, always eager to build projects that make a real impact.</p>
+          <p>Hi, my name is Khoi Vi, a 4th-year Computer Science student at Vietnamese-German University (VGU) on a mission to become a Full-Stack Developer. For me, coding is all about connecting solid logic with a seamless user experience. I build robust foundations under the hood using C/C++, Python, and Java (OOP), in order to enhance my logical thinking and problem solving skill.. To bring those ideas to life on the screen, I rely on HTML and CSS for structure and design, while using JavaScript as my full-stack powerhouse—leveraging React for dynamic interfaces and Node.js for the backend. My goal is always to ensure the final product runs flawlessly while feeling completely natural to the user.</p>
+          <p>My mindset was greatly shaped by a 6-month study abroad program in Bonn, Germany, which leveled up both my technical skills and my ability to collaborate in cross-cultural teams. Currently, I'm diving deep into the React & Node.js ecosystem, always eager to build user-friendly products that deliver real value!</p>
         </div>
 
         {/* Skill & language */}
