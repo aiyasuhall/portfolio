@@ -29,7 +29,7 @@ export default function About({ personalInfo }) {
         <div className="about-text">
           <h3 className="about-subtitle">Introduction</h3>
           <p>Hi, my name is Khoi Vi, a 4th-year Computer Science student at Vietnamese-German University and an aspiring Software Developer. I love turning tricky problems into clean, user-friendly code! My background in C/C++, Python, and JavaScript is paired with a love for building modern, beautiful user interfaces with React.</p>
-          <p>I always code with the user in mind—ensuring everything works perfectly under the hood while delivering a seamless experience. During a 6-month study program in Bonn, Germany, I gained valuable international exposure that leveled up both my technical expertise and cross-cultural teamwork. Right now, I'm focused on mastering the React & Node.js ecosystem, always eager to build projects that make a real impact.</p>
+          <p>IIII always code with the user in mind—ensuring everything works perfectly under the hood while delivering a seamless experience. During a 6-month study program in Bonn, Germany, I gained valuable international exposure that leveled up both my technical expertise and cross-cultural teamwork. Right now, I'm focused on mastering the React & Node.js ecosystem, always eager to build projects that make a real impact.</p>
         </div>
 
         {/* Skill & language */}
