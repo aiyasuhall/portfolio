@@ -17,7 +17,7 @@ export default function Experience() {
       company: "Vietnamese-German University",
       time: "10/2023 - 05/2024",
       desc: "Writing content for VGU Alumin page, joining in many workshop including AI for Images: Theories to Practices, IT: Career Exploration Day, etc."
-    }
+    },
     {
       role: "Attending Hackathon",
       company: "RMIT University",
