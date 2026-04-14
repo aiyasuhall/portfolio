@@ -1,9 +1,9 @@
 export default function Projects() {
   const myProjects = [
     { name: "Fall Detection System", desc: "Smart assistance system for elderly people.", link: "https://github.com/aiyasuhall/Fall_Detection_System" },
-    { name: "Green Source Project", desc: "Optimized tool in investing.", link: "https://github.com/aiyasuhall/GreenSource_project" },
-    { name: "Running Game", desc: "A funny game with a realistic story.", link: "https://github.com/aiyasuhall/running_game" },
-    { name: "Mobile Programming", desc: "A helpful tool for students stuyding new language.", link: "https://github.com/aiyasuhall/mobile_programming" }
+    { name: "Green Source Project", desc: "Optimized tool in investing.", link: "https://greensource-project.onrender.com/" },
+    { name: "GrindNow", desc: "An intuitive To-Do platform empowering users to efficiently organize, track, and prioritize their daily activities.", link: "https://todo-application-y4nu.onrender.com/" },
+    { name: "Talkify", desc: "A responsive real-time messaging application enabling seamless direct and group communication, powered by Socket.io, TypeScript, and secure JWT authentication.", link: "talkify-frontend-omega.vercel.app" }
   ];
 
   return (
