@@ -7,6 +7,12 @@ export default function Experience() {
       desc: "Computer Science student, actively learning and applying modern web technologies like React, Node.js, etc. in various projects and coursework."
     },
     {
+      role: "Full Stack Developer Internship",
+      company: "Phong Vi Co., Ltd.",
+      time: "03/2025 - 09/2025",
+      desc: "Over my 6-month internship, I successfully transitioned from academic programming to professional software engineering by actively engaging in Agile workflows and stringent Code Reviews. I spearheaded the end-to-end development of GreenSource, taking full ownership of both the system architecture and dynamic business logic. This role solidified my ability to bridge the gap between complex operational needs and technical execution, ultimately delivering a secure, scalable, and high-performance full-stack solution."
+    },
+    {
       role: "Exchange Student",
       company: "Hochschule Bonn-Rhein-Sieg University of Applied Sciences",
       time: "09/2024 - 03/2025",
