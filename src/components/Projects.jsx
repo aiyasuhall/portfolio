@@ -3,7 +3,7 @@ export default function Projects() {
     { name: "Fall Detection System", desc: "Smart assistance system for elderly people.", link: "https://github.com/aiyasuhall/Fall_Detection_System" },
     { name: "Green Source Project", desc: "Optimized tool in investing.", link: "https://greensource-project.onrender.com/" },
     { name: "GrindNow", desc: "An intuitive To-Do platform empowering users to efficiently organize, track, and prioritize their daily activities.", link: "https://todo-application-y4nu.onrender.com/" },
-    { name: "Talkify", desc: "A responsive real-time messaging application enabling seamless direct and group communication, powered by Socket.io, TypeScript, and secure JWT authentication.", link: "talkify-frontend-omega.vercel.app" }
+    { name: "Talkify", desc: "A responsive real-time messaging application enabling seamless direct and group communication, powered by Socket.io, TypeScript, and secure JWT authentication.", link: "https://talkify-frontend-omega.vercel.app" }
   ];
 
   return (
@@ -14,7 +14,7 @@ export default function Projects() {
           <div key={index} className="project-card">
             <h3>{proj.name}</h3>
             <p>{proj.desc}</p>
-            <a href={proj.link} className="btn-view">View details</a>
+            <a href={proj.link} className="btn-view" target="_blank" rel="noopener noreferrer">View details</a>
           </div>
         ))}
       </div>
