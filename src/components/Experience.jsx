@@ -5,8 +5,9 @@ export default function Experience() {
       company: "Accenture Vietnam",
       time: "05/2026 - now",
       desc: [
-        "Cooperated with team to build a tool that detects discrepancies between employees' reported overtime/plans and their people lead's plan. I have built a template for the tool, with team's consultant, and use Dataverse to store data and Power Automate to automate the workflow. The tool is expected to help HR teams streamline their processes.",
-        "Exploring AI — studying how large language models reason and how agentic systems are architected, with the goal of integrating intelligent capabilities into future products."
+        "Implemented authorization/ access control of an internal tool supporting for HR and leads to manage working hours and shift schedules of employees.",
+        "Researched about Agentic AI concepts, focusing on multi-agent orchestration and dynamic runtime tool selection to analyze and automate enterprise-level system deployments.",
+        "Designed and implemented a complete multi-agent architecture from scratch, orchestrating specialized utility agents and a dynamic routing agent capable of processing natural language feedback for iterative task revision."
       ]
     }
   ];
